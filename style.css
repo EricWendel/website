@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    background: black;
+    color: white;
+    font-family: "Cairo", serif;
+}
+
+/* navbar */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:black;
+    padding: 1vh 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 8;
+}
+
+.logo{
+    font-weight: 500;
+}
+
+.nav-links-container{
+    display: flex;
+    list-style: none;
+}
+
+.link{
+    color: white;
+    margin: 0 2vw;
+    text-decoration: none;
+    padding: 1vw;
+    position: relative;
+}
+
+.link:hover{
+    opacity: .8;
+}

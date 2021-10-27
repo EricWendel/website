@@ -16,6 +16,37 @@ body{
     font-family: "Cairo", serif;
 }
 
+/* general */
+
+.heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.5em;
+}
+
+.sub-heading{
+    text-align: center;
+    font-size: 1em;
+    margin: 10px;
+    opacity: 0.8;
+}
+
+.seperator{
+    width: 30%;
+    margin: 15px auto;
+    position: relative;
+}
+
+.seperator::after{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+
 /* navbar */
 
 .navbar{
@@ -72,7 +103,7 @@ body{
 }
 
 .home-heading{
-    font-size: 6rem;
+    font-size: 6em;
     font-weight: 500;
 }
 
@@ -80,3 +111,55 @@ body{
     margin-bottom: 50px;
     padding-left: 30px;
 }
+
+/* projects */
+
+.projects{
+    padding: 10vh 10vw;
+}
+
+.project-container{
+    width: 100%;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2vw;
+}
+
+.project-card{
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.project-card:hover .card-content{
+    opacity: 1;
+}
+
+.project-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.project-name{
+    font-weight: 700;
+    font-size: 2.5em;
+    text-align: center;
+}
+

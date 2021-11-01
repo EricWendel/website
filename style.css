@@ -65,6 +65,9 @@ body{
 
 .logo{
     font-weight: 500;
+    color: white;
+    text-decoration: none;
+    position: relative;
 }
 
 .nav-links-container{

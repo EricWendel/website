@@ -47,6 +47,13 @@ body{
     background: white;
 }
 
+.small-heading{
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+}
+
 /* navbar */
 
 .navbar{
@@ -129,8 +136,8 @@ body{
 /* about */
 
 .about{
-    padding: 10vh 10vw;
-    background-color:#404040;
+    padding: 4vh 10vw;
+    background-color:#4a4a4a;
 }
 
 .feature-container{
@@ -159,10 +166,63 @@ body{
     transform: translate(-50%, -50%) skewX(20deg);
 }
 
+/* education */
+
+.education{
+    padding: 4vh 10vw;
+}
+
+.collapsible{
+    background: #4a4a4a;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+}
+
+.collapsible.completed{
+    background: #498022;
+}
+
+.collapsible.inprogress{
+    background: #224e80;
+}
+
+.collapsible.planned{
+    background: #80223a;
+}
+
+.collapsible-content{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    display: none;
+    overflow: hidden;
+    background: #1f1f1f;
+}
+.collapsible:after{
+    content: '\02795';
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after{
+    content: "\2796";
+}
+
+.spacer{
+    margin: 20px;
+}
+
 /* projects */
 
 .projects{
-    padding: 10vh 10vw;
+    padding: 4vh 10vw;
     background-color: #4a4a4a;
 }
 

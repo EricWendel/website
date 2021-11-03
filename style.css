@@ -422,6 +422,10 @@ footer{
         grid-gap: 2vw;
     }
 
+    .class-list{
+        white-space: normal;
+    }
+
     /* projects section */
 
     .project-container{
@@ -434,6 +438,8 @@ footer{
     .project-name{
         font-size: 3rem;
     }
+
+    /* footer */
 
     footer{
         margin: 30px;

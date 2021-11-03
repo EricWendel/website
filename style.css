@@ -172,6 +172,16 @@ body{
     padding: 4vh 10vw;
 }
 
+.education-container{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+}
+
 .collapsible{
     background: #4a4a4a;
     color: white;
@@ -382,6 +392,17 @@ body{
     }
 
     /* about section */
+
+    /* education section */
+    .education-container{
+        margin-top: 50px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2vw;
+    }
 
     /* projects section */
 

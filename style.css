@@ -222,6 +222,11 @@ body{
     background-color: #4a4a4a;
 }
 
+.projects-note{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .project-container{
     width: 100%;
     padding-top: 30px;
@@ -234,6 +239,8 @@ body{
     position: relative;
     cursor: pointer;
     display: block;
+    color: white;
+    text-decoration: none;
 }
 
 .project-card:hover .card-content{

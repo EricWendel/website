@@ -411,6 +411,10 @@ footer{
 
     /* about section */
 
+    .about-paragraph{
+        text-indent: 0;
+    }
+
     /* education section */
     .education-container{
         margin-top: 50px;

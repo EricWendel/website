@@ -1,130 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eric</title>
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cairo"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- navbar -->
     <nav class="navbar">
-        <h1><a href="https://ericwendel.me/" class="logo">EricWendel.me</a></h1>
-        <div class="toggle">
-            <h2></h2>
-            <h2></h2>
-        </div>
-        <ul class="nav-links-container">
-            <li class="nav-link"><a href="#" class="link">Home</a></li>
-            <li class="nav-link"><a href="#about" class="link">About</a></li>
-            <li class="nav-link"><a href="#education" class="link">Education</a></li>
-            <li class="nav-link"><a href="#projects" class="link">Projects</a></li>
-        </ul>
+      <h1><a href="https://ericwendel.me/" class="logo">EricWendel.me</a></h1>
+      <div class="toggle">
+        <h2></h2>
+        <h2></h2>
+      </div>
+      <ul class="nav-links-container">
+        <li class="nav-link"><a href="#" class="link">Home</a></li>
+        <li class="nav-link"><a href="#about" class="link">About</a></li>
+        <li class="nav-link">
+          <a href="#education" class="link">Education</a>
+        </li>
+        <li class="nav-link"><a href="#projects" class="link">Projects</a></li>
+      </ul>
     </nav>
 
     <!-- home -->
     <section class="home">
-        <div class="home-content">
-            <h1 class="home-heading">Hi, I Am Eric</h1>
-            <p class="info"><i>Computer Science Student at Texas A&M Universtiy</i></p>
+      <div class="home-content">
+        <h1 class="home-heading">Hi, I Am Eric</h1>
+        <p class="info">
+          <i>Computer Science Student at Texas A&M Universtiy</i>
+        </p>
+      </div>
+      <div class="portrait-container">
+        <div>
+          <img src="img/portrait1.jpg" alt="" />
         </div>
-        <div class="portrait-container">
-            <div>
-                <img src="img/portrait1.jpg" alt="">
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- about -->
     <section class="about" id="about">
-        <h2 class="heading">About</h2>
-        <div class="seperator"></div>
+      <h2 class="heading">About</h2>
+      <div class="seperator"></div>
 
-        <p class="about-paragraph">
-            I am a dedicated student at Texas A&M pursuing a Computer Science Major and Business Minor. 
-            My career interests are very wide but I have recently been interested in financial technology. 
-            I have 3 years of experience with Java in high school and approximately 2 years of experience with C++ at Texas A&M. 
-            I have also explored other technologies on my own such as Docker, SQL, MongoDB, React, and Jest. 
-            This site was made using pure html, css, and javascript. 
-        </p>
+      <p class="about-paragraph">
+        I am a dedicated student at Texas A&M pursuing a Computer Science Major
+        and Business Minor. My career interests are very wide but I have
+        recently been interested in financial technology. I have 3 years of
+        experience with Java in high school and approximately 2 years of
+        experience with C++ at Texas A&M. I have also explored other
+        technologies on my own such as Docker, SQL, MongoDB, React, and Jest.
+        This site was made using pure html, css, and javascript.
+      </p>
     </section>
 
     <!-- education -->
 
-    <section class="education"  id="education">
-        <h2 class="heading">Education</h2>
-        <div class="seperator"></div>
+    <section class="education" id="education">
+      <h2 class="heading">Education</h2>
+      <div class="seperator"></div>
 
-        <div class="education-container">
-            <h1>GPA: 4.0</h1>
-            <h1>Major: Computer Science</h1>
-            <h1>Minor: Business</h1>
-        </div>
+      <div class="education-container">
+        <h1>GPA: 4.0</h1>
+        <h1>Major: Computer Science</h1>
+        <h1>Minor: Business</h1>
+      </div>
 
-        <h3 class="small-heading">Relevant Courses</h3>
+      <h3 class="small-heading">Relevant Courses</h3>
 
-        <button type="button" class="collapsible completed">Completed</button>
-        <div class="collapsible-content">
-            <p class="class-list">Intro Program Design  |<wbr>  Discrete Structures  |<wbr>  Data Structures and Algorithms  |<wbr>  Computer Organization  |<wbr>  Programming Languages  |<wbr>  Computer Systems  |<wbr>  Programming Studio</p>
-        </div>
+      <button type="button" class="collapsible completed">Completed</button>
+      <div class="collapsible-content">
+        <p class="class-list">
+          Intro Program Design |<wbr /> Discrete Structures |<wbr /> Data
+          Structures and Algorithms |<wbr /> Computer Organization |<wbr />
+          Programming Languages |<wbr /> Computer Systems |<wbr /> Programming
+          Studio
+        </p>
+      </div>
 
-        <div class="spacer"></div>
+      <div class="spacer"></div>
 
-        <button type="button" class="collapsible inprogress">In Progress</button>
-        <div class="collapsible-content">
-            <p class="class-list">December Break</p>
-        </div>
+      <button type="button" class="collapsible inprogress">In Progress</button>
+      <div class="collapsible-content">
+        <p class="class-list">December Break</p>
+      </div>
 
-        <div class="spacer"></div>
+      <div class="spacer"></div>
 
-        <button type="button" class="collapsible planned">Planned</button>
-        <div class="collapsible-content">
-            <p class="class-list">Design Analysis of Algorithms  |<wbr>  Database Systems  |<wbr>  Operating Systems  |<wbr>  Parallel Computing  |<wbr>  Compiler Design  |<wbr>  Computer and Network Security  |<wbr>  Information Storage and Retrieval</p>
-        </div>
+      <button type="button" class="collapsible planned">Planned</button>
+      <div class="collapsible-content">
+        <p class="class-list">
+          Design Analysis of Algorithms |<wbr /> Database Systems |<wbr />
+          Operating Systems |<wbr /> Parallel Computing |<wbr /> Compiler Design
+          |<wbr /> Computer and Network Security |<wbr /> Information Storage
+          and Retrieval
+        </p>
+      </div>
     </section>
 
-
-
-
-
     <!-- projects -->
-    <section class="projects"  id="projects">
-        <h2 class="heading">Projects</h2>
-        <div class="seperator"></div>
+    <section class="projects" id="projects">
+      <h2 class="heading">Projects</h2>
+      <div class="seperator"></div>
 
-        <p class="projects-note">More projects coming soon</p>
+      <p class="projects-note">More projects coming soon</p>
 
-        <div class="project-container">
-            <a href="https://mutrade.herokuapp.com/" class="project-card">
-                <img src="img/mutrade.PNG" alt="">
-                <div class="card-content">
-                    <h1 class="project-name">MuTrade</h1>
-                </div>
-            </a>
-            <a href="https://github.com/EricWendel/recipe-api" class="project-card">
-                <img src="img/recipeApi.PNG" alt="">
-                <div class="card-content">
-                    <h1 class="project-name">Recipe API</h1>
-                </div>
-            </a>
-        </div>
+      <div class="project-container">
+        <a href="https://recipe.ericwendel.me/" class="project-card">
+          <img src="img/recipeImg1.PNG" alt="" />
+          <div class="card-content">
+            <h1 class="project-name">Recipe App</h1>
+          </div>
+        </a>
+        <a href="https://mutrade.herokuapp.com/" class="project-card">
+          <img src="img/mutrade.PNG" alt="" />
+          <div class="card-content">
+            <h1 class="project-name">MuTrade</h1>
+          </div>
+        </a>
+      </div>
     </section>
 
     <!-- footer -->
     <footer>
-        <div class="media-container">
-            <a href="https://github.com/EricWendel"  class="center-a"><img src="img/GitHub-Mark-Light-120px-plus.png" alt="GitHub""></a>
-            <a href="https://www.linkedin.com/in/eric-wendel/"  class="center-a"><img src="img/linkedin.png" alt="Linkedin"></a>
-            <a href="https://drive.google.com/file/d/1u9pq54IF7PtrkbvJUnI5KjP0-cLJueEN/view?usp=sharing"  class="center-a" style="background: white; border-radius: 5px;"><img src="img/resumeDownload.png" alt="Linkedin"></a>
-        </div>
+      <div class="media-container">
+        <a href="https://github.com/EricWendel" class="center-a"
+          ><img src="img/GitHub-Mark-Light-120px-plus.png" alt="GitHub""></a
+        >
+        <a href="https://www.linkedin.com/in/eric-wendel/" class="center-a"
+          ><img src="img/linkedin.png" alt="Linkedin"
+        /></a>
+        <a
+          href="https://drive.google.com/file/d/1u9pq54IF7PtrkbvJUnI5KjP0-cLJueEN/view?usp=sharing"
+          class="center-a"
+          style="background: white; border-radius: 5px"
+          ><img src="img/resumeDownload.png" alt="Linkedin"
+        /></a>
+      </div>
     </footer>
 
     <script src="app.js"></script>
-
-</body>
+  </body>
 </html>

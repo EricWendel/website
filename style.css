@@ -76,14 +76,10 @@ body {
 .wrapper .sidebar .socials a {
   display: block;
   width: 40px;
-  background: var(--light-color);
   height: 40px;
   line-height: 40px;
   text-align: center;
   margin: 0 5px;
-  color: var(--off-white);
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
 }
 
 .wrapper .sidebar .socialLogo {
@@ -92,7 +88,7 @@ body {
   padding: 5px;
 }
 
-.wrapper .main-content {
+.wrapper .mainContent {
   width: 100%;
   overflow: hidden;
   z-index: 2;
@@ -112,7 +108,7 @@ body {
   transition: font-size 0.5s ease-in-out;
 }
 
-.top-section {
+.topSection {
   height: 100vh;
   position: relative;
   background-color: white;
@@ -132,21 +128,8 @@ input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]:checked ~ .main-content {
+input[type="checkbox"]:checked ~ .mainContent {
   margin-left: 200px;
-}
-
-label {
-  display: inline-block;
-  padding: 7px 10px;
-  background-color: transparent;
-  cursor: pointer;
-  margin: 10px;
-  z-index: 3;
-  position: fixed;
-  transition: transform 0.5s ease-in-out;
-  background-color: white;
-  border-radius: 5px;
 }
 
 .bar {
@@ -162,12 +145,73 @@ input[type="checkbox"]:checked ~ label {
   transform: translateX(200px);
 }
 
-input[type="checkbox"]:checked ~ .main-content .top-section .headline {
+input[type="checkbox"]:checked ~ .mainContent .topSection .headline {
   font-size: 450%;
 }
 
-.middle {
-  margin: 0 auto;
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+}
+
+input[type="checkbox"] {
+  transition: all 0.5s;
+  display: none;
+}
+.sidebarIconToggle {
+  transition: all 0.5s;
+  cursor: pointer;
+  position: fixed;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  height: 44px;
+  width: 44px;
+  margin: 15px;
+}
+.spinner {
+  transition: all 0.5s;
+  position: relative;
+  display: block;
+  height: 6px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--off-white);
+}
+.horizontal {
+  transition: all 0.5s;
+  position: relative;
+  float: left;
+  margin-top: 6px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.5s;
+  box-sizing: border-box;
+  float: left;
+}
+.diagonal.part-2 {
+  transition: all 0.5s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 6px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: opacity 0.2s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.5s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 16px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.5s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -18px;
 }
 
 /* cards */
@@ -187,7 +231,7 @@ input[type="checkbox"]:checked ~ .main-content .top-section .headline {
   font-size: 1.5rem;
 }
 
-.card-container {
+.cardContainer {
   width: 100%;
   padding: 30px;
   margin-top: 20px;
@@ -197,7 +241,7 @@ input[type="checkbox"]:checked ~ .main-content .top-section .headline {
   grid-gap: 10vw;
 }
 
-.card-card {
+.cardCard {
   height: 50vh;
   width: 30vw;
   position: relative;
@@ -206,7 +250,7 @@ input[type="checkbox"]:checked ~ .main-content .top-section .headline {
   text-decoration: none;
 }
 
-.card-card img {
+.cardCard img {
   width: 100%;
   height: 100%;
   object-fit: cover;

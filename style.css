@@ -90,16 +90,18 @@ body {
 
 .wrapper .mainContent {
   width: 100%;
-  overflow: hidden;
+  height: 100%;
+
   z-index: 2;
   transition: transform 0.5s ease-in-out, height 0.5s ease-in-out,
     margin 0.5s ease-in-out;
+  background-color: white;
 }
 
 .headline {
   position: absolute;
   z-index: 1;
-  height: 90%;
+  height: 80%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -111,15 +113,14 @@ body {
 .topSection {
   height: 100vh;
   position: relative;
-  background-color: white;
 }
 
 .imagebg {
-  position: relative;
-  opacity: 75%;
+  position: fixed;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  opacity: 90%;
 }
 
 /* nav toggle */
@@ -218,12 +219,6 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 .cards {
   padding: 4vh 10vw;
-  background-color: var(--custom-gray);
-}
-
-#cards {
-  scroll-margin-top: 4vh;
-  height: 100vw;
 }
 
 .cards-note {
@@ -233,17 +228,17 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 .cardContainer {
   width: 100%;
-  padding: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: 20vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   grid-gap: 10vw;
 }
 
 .cardCard {
-  height: 50vh;
-  width: 30vw;
+  height: min(50vh, 30vw);
+  width: min(50vh, 30vw);
   position: relative;
   display: block;
   color: white;
@@ -255,4 +250,37 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   height: 100%;
   object-fit: cover;
   border-radius: 4vh;
+}
+
+.logoContainer {
+  width: 100%;
+  padding: 0;
+  margin-top: 4vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.logoCard {
+  height: min(50vh/4, 30vw/4);
+  width: min(50vh/4, 30vw/4);
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.logoCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.logoCategory {
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
 }

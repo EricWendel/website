@@ -288,3 +288,47 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   text-decoration: none;
   font-size: x-large;
 }
+
+/* mobile view */
+@media (max-width: 900px) {
+  .wrapper {
+    overflow: hidden;
+  }
+  input[type="checkbox"]:checked ~ .mainContent {
+    margin-left: 100vw;
+  }
+  input[type="checkbox"]:checked ~ label {
+    transform: translateX(80vw);
+  }
+  .wrapper .sidebar {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background: var(--dark-color);
+    padding: min(20px, 4vh) 0;
+    z-index: 1;
+  }
+  .wrapper .sidebar .socials a {
+    display: block;
+    width: 25vw;
+    height: 25vw;
+    line-height: 25vw;
+    text-align: center;
+  }
+  .wrapper .sidebar .socialLogo {
+    width: 25vw;
+    height: 25vw;
+    padding: 5vw;
+  }
+  .wrapper .sidebar ul li a {
+    color: var(--off-white);
+    display: block;
+    padding: 4vh;
+  }
+
+  .wrapper .sidebar ul li a .items {
+    width: min(25px, 3vw);
+    font-size: x-large;
+    text-align: right;
+  }
+}

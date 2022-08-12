@@ -1,6 +1,6 @@
 :root {
-  --dark-color: #3e6a9d;
-  --light-color: #4da1bb;
+  --dark-color: #3d4a4e;
+  --light-color: #1a7a5a;
   --off-white: #dddddd;
   --custom-gray: #556062;
   --custom-maroon: #5c303c;
@@ -115,7 +115,7 @@ body {
 }
 
 .imagebg {
-  position: fixed;
+  position: relative;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -216,10 +216,6 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 /* cards */
 
-.cards {
-  padding: 4vh 10vw;
-}
-
 .cards-note {
   text-align: center;
   font-size: 1.5rem;
@@ -228,11 +224,20 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .cardContainer {
   width: 100%;
   padding: 10px;
-  margin: 20px;
-  margin-bottom: 20vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 10vw;
+  padding: 10vh 10vw;
+}
+
+#softwareContainer {
+  background-color: #20906b;
+}
+#webContainer {
+  background-color: #429e7f;
+}
+#creativeContainer {
+  background-color: #4cac8c;
 }
 
 .cardCard {
@@ -247,7 +252,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .cardCard img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 4vh;
 }
 

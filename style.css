@@ -289,6 +289,13 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   font-size: x-large;
 }
 
+iframe {
+  height: 100vh;
+  width: 100%;
+  border: none;
+  margin-bottom: -5px;
+}
+
 /* mobile view */
 @media (max-width: 900px) {
   .wrapper {
@@ -325,7 +332,13 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     display: block;
     padding: 4vh;
   }
-
+  .wrapper .sidebar h2 {
+    color: var(--off-white);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: min(20px, 4vh);
+    font-size: xx-large;
+  }
   .wrapper .sidebar ul li a .items {
     width: min(25px, 3vw);
     font-size: x-large;

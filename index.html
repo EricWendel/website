@@ -1,150 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eric</title>
     <link rel="icon" type="image/png" href="img/favicon.png" />
-
     <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Cairo"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar">
-      <h1><a href="https://ericwendel.me/" class="logo">EricWendel.me</a></h1>
-      <div class="toggle">
-        <h2></h2>
-        <h2></h2>
-      </div>
-      <ul class="nav-links-container">
-        <li class="nav-link"><a href="#" class="link">Home</a></li>
-        <li class="nav-link"><a href="#about" class="link">About</a></li>
-        <li class="nav-link">
-          <a href="#education" class="link">Education</a>
-        </li>
-        <li class="nav-link"><a href="#projects" class="link">Projects</a></li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+      <!-- All content goes inside the wrapper-->
+      <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+          <li>
+            <a href="index.html"><i class="items">Home</i></a>
+          </li>
+          <li>
+            <a href="portfolio.html"><i class="items">Portfolio</i></a>
+          </li>
+          <li>
+            <a href="resume.html"><i class="items">Resume</i></a>
+          </li>
+          <li>
+            <a href="blog.html"><i class="items">Blog</i></a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="items">Contact</i></a>
+          </li>
+        </ul>
 
-    <!-- home -->
-    <section class="home">
-      <div class="home-content">
-        <h1 class="home-heading">Hi, I Am Eric</h1>
-        <p class="info">
-          <i>Computer Science Student at Texas A&M Universtiy</i>
-        </p>
-      </div>
-      <div class="portrait-container">
-        <div>
-          <img src="img/portrait1.jpg" alt="" />
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/eric-wendel/"
+            ><img src="img/linkedinDark.png" class="socialLogo"
+          /></a>
+          <a href="https://github.com/EricWendel"
+            ><img src="img/githubDark.png" class="socialLogo"
+          /></a>
+          <a href="https://twitter.com/EricWendel20"
+            ><img src="img/twitterDark.png" class="socialLogo"
+          /></a>
         </div>
       </div>
-    </section>
 
-    <!-- about -->
-    <section class="about" id="about">
-      <h2 class="heading">About</h2>
-      <div class="seperator"></div>
+      <input type="checkbox" id="openSidebarMenu" />
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <span class="spinner diagonal part-1"></span>
+        <span class="spinner horizontal"></span>
+        <span class="spinner diagonal part-2"></span>
+      </label>
 
-      <p class="about-paragraph">
-        I am a dedicated student at Texas A&M pursuing a Computer Science Major
-        and Business Minor. I have recently been interested in full stack web
-        development. I have 3 years of experience with Java in high school and
-        approximately 3 years of experience with C++ at Texas A&M. I am
-        self-taught in web development and familiar with NextJS, Tailwindcss,
-        TypeScript, and PostgreSQL. I plan to graduate in May of 2023.
-      </p>
-    </section>
+      <div class="mainContent">
+        <section class="topSection">
+          <h1 class="headline">Eric Wendel</h1>
+          <img class="imagebg" src="img/bg.png" id="imagebg" />
+        </section>
 
-    <!-- education -->
+        <section class="cards" id="cards">
+          <div class="cardContainer" id="softwareContainer">
+            <div class="cardCard">
+              <img src="img/braces.png" alt="" />
+            </div>
+            <div class="logoCategory">
+              <h1>Software Engineer</h1>
+              <div class="logoContainer">
+                <div class="logoCard">
+                  <img src="img/cppLogo.svg" alt="" />
+                </div>
+                <div class="logoCard"></div>
+                <div class="logoCard">
+                  <img src="img/java.png" alt="" />
+                </div>
+                <div class="logoCard"></div>
 
-    <section class="education" id="education">
-      <h2 class="heading">Education</h2>
-      <div class="seperator"></div>
-
-      <div class="education-container">
-        <h1>GPA: 4.0</h1>
-        <h1>Major: Computer Science</h1>
-        <h1>Minor: Business</h1>
-      </div>
-
-      <h3 class="small-heading">Relevant Courses</h3>
-
-      <button type="button" class="collapsible completed">Completed</button>
-      <div class="collapsible-content">
-        <p class="class-list">
-          Intro Program Design |<wbr /> Discrete Structures |<wbr /> Data
-          Structures and Algorithms |<wbr /> Computer Organization |<wbr />
-          Programming Languages |<wbr /> Computer Systems |<wbr /> Programming
-          Studio |<wbr /> Design Analysis of Algorithms |<wbr /> Networks and
-          Distributed Programming |<wbr /> Computer Human Interaction
-        </p>
-      </div>
-
-      <div class="spacer"></div>
-
-      <button type="button" class="collapsible inprogress">In Progress</button>
-      <div class="collapsible-content">
-        <p class="class-list">Internship at HPE</p>
-      </div>
-
-      <div class="spacer"></div>
-
-      <button type="button" class="collapsible planned">Planned</button>
-      <div class="collapsible-content">
-        <p class="class-list">
-          Database Systems |<wbr /> Software Engineering |<wbr /> Operating
-          Systems |<wbr /> Cloud Computing
-        </p>
-      </div>
-    </section>
-
-    <!-- projects -->
-    <section class="projects" id="projects">
-      <h2 class="heading">Projects</h2>
-      <div class="seperator"></div>
-
-      <p class="projects-note">More projects coming soon</p>
-
-      <div class="project-container">
-        <a href="https://recipe.ericwendel.me/" class="project-card">
-          <img src="img/recipeImg1.PNG" alt="" />
-          <div class="card-content">
-            <h1 class="project-name">Recipe App</h1>
+                <div class="logoCard"></div>
+                <div class="logoCard">
+                  <img src="img/python.png" alt="" />
+                </div>
+                <div class="logoCard"></div>
+                <div class="logoCard">
+                  <img src="img/git.png" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
-        <a href="https://mutrade.herokuapp.com/" class="project-card">
-          <img src="img/mutrade.PNG" alt="" />
-          <div class="card-content">
-            <h1 class="project-name">MuTrade</h1>
+          <div class="cardContainer" id="webContainer">
+            <div class="cardCard">
+              <img src="img/dev.png" alt="" />
+            </div>
+            <div class="logoCategory">
+              <h1>Web Developer</h1>
+              <div class="logoContainer">
+                <div class="logoCard">
+                  <img src="img/html.png" alt="" />
+                </div>
+                <div class="logoCard"></div>
+                <div class="logoCard">
+                  <img src="img/css.png" alt="" />
+                </div>
+                <div class="logoCard"></div>
+
+                <div class="logoCard"></div>
+                <div class="logoCard">
+                  <img src="img/javascript.png" alt="" />
+                </div>
+                <div class="logoCard"></div>
+                <div class="logoCard">
+                  <img src="img/nextjs.png" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
-      </div>
-    </section>
+          <div class="cardContainer" id="creativeContainer">
+            <div class="cardCard">
+              <img src="img/creativeCloud.svg" alt="" />
+            </div>
+            <div class="logoCategory">
+              <h1>Creative Design</h1>
+              <div class="logoContainer">
+                <div class="logoCard">
+                  <img src="img/photoshop.svg" alt="" />
+                </div>
+                <div class="logoCard"></div>
+                <div class="logoCard">
+                  <img src="img/illustrator.svg" alt="" />
+                </div>
+                <div class="logoCard"></div>
 
-    <!-- footer -->
-    <footer>
-      <div class="media-container">
-        <a href="https://github.com/EricWendel" class="center-a"
-          ><img src="img/GitHub-Mark-Light-120px-plus.png" alt="GitHub""></a
-        >
-        <a href="https://www.linkedin.com/in/eric-wendel/" class="center-a"
-          ><img src="img/linkedin.png" alt="Linkedin"
-        /></a>
-        <a
-          href="https://drive.google.com/file/d/1u9pq54IF7PtrkbvJUnI5KjP0-cLJueEN/view?usp=sharing"
-          class="center-a"
-          style="background: white; border-radius: 5px"
-          ><img src="img/resumeDownload.png" alt="Linkedin"
-        /></a>
+                <div class="logoCard"></div>
+                <div class="logoCard">
+                  <img src="img/premierepro.svg" alt="" />
+                </div>
+                <div class="logoCard"></div>
+                <div class="logoCard">
+                  <img src="img/aftereffects.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </footer>
-
-    <script src="app.js"></script>
+    </div>
   </body>
 </html>

@@ -234,10 +234,16 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   background-color: #20906b;
 }
 #webContainer {
-  background-color: #429e7f;
+  background-color: #3c9b7b;
 }
 #creativeContainer {
   background-color: #4cac8c;
+}
+.projectTitle {
+  margin-top: 15px;
+}
+.projectSummary {
+  margin: 10px;
 }
 
 .cardCard {
@@ -294,6 +300,10 @@ iframe {
   width: 100%;
   border: none;
   margin-bottom: -5px;
+}
+
+.projectSummary {
+  color: var(--off-white);
 }
 
 /* mobile view */

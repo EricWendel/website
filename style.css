@@ -16,7 +16,7 @@
 }
 
 body {
-  background: var(--off-white);
+  background: #57906f;
   height: 100%;
   overflow-x: hidden;
 }
@@ -33,6 +33,7 @@ body {
   background: var(--dark-color);
   padding: min(20px, 4vh) 0;
   z-index: 1;
+  opacity: 0;
 }
 
 .wrapper .sidebar h2 {
@@ -151,6 +152,16 @@ input[type="checkbox"]:checked ~ .mainContent .topSection .headline {
 
 input[type="checkbox"]:checked ~ #sidebarMenu {
   transform: translateX(0);
+}
+
+input[type="checkbox"]:checked ~ .sidebar {
+  transition: opacity 0s;
+  opacity: 1;
+}
+
+input[type="checkbox"]:not(:checked) ~ .sidebar {
+  transition: opacity 4s;
+  opacity: 0;
 }
 
 input[type="checkbox"] {

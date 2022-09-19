@@ -11,22 +11,27 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="https://use.typekit.net/lcb5mnl.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
-  <body>
+  <body id="body">
     <div class="wrapper">
       <!-- All content goes inside the wrapper-->
       <div class="sideLogos">
         <ul>
           <li>
-            <a href="#" class="sideLink"
+            <a href="https://github.com/EricWendel" class="sideLink"
               ><img src="img/github.svg" class="sideImg"
             /></a>
           </li>
           <li>
-            <a href="#"><img src="img/linkedin.svg" class="sideImg" /></a>
+            <a href="https://www.linkedin.com/in/eric-wendel/"
+              ><img src="img/linkedin.svg" class="sideImg"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="img/twitter.svg" class="sideImg" /></a>
+            <a onclick="openResume()">
+              <img src="img/resumeIcon.svg" class="sideImg" />
+            </a>
           </li>
         </ul>
       </div>
@@ -41,6 +46,20 @@
             </h2>
           </div>
         </section>
+        <section class="resumePopup">
+          <button class="closeButton" id="closeButton" onclick="closeResume()">
+            X
+          </button>
+          <iframe
+            height="100%"
+            width="100%"
+            frameborder="0"
+            src="https://docs.google.com/document/d/e/2PACX-1vRo---k4lrPnF9Mghrcs_lRPSsDdl-k19AMvb8oIbrKVj-J3N5TDvIqpxEtU46ReDPyE5trDJ1UH841/pub?embedded=true"
+            class="myResume"
+            id="myResume"
+          ></iframe>
+        </section>
+
         <section class="content">
           <h2>Who Am I?</h2>
           <p class="aboutMe">

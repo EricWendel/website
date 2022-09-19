@@ -25,6 +25,30 @@ body {
   overflow-x: hidden;
 }
 
+.myResume {
+  display: none;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  height: 90vh;
+  width: 50vw;
+  margin: 5vh 25vw;
+}
+
+.closeButton {
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  position: fixed;
+  top: 5%;
+  right: 20%;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
 .topSection {
   height: 60vh;
   width: 60vw;
@@ -75,12 +99,14 @@ body {
 /* Side Logos */
 
 .sideLogos {
+  z-index: 1;
   position: fixed;
   bottom: 0;
   left: 0;
   margin: 4vh;
   line-height: 6vh;
   color: var(--off-white);
+  cursor: pointer;
 }
 
 .sideImg {
@@ -121,6 +147,16 @@ body {
     font-size: 7vw;
   }
   .sideLogos {
-    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    float: right;
+    columns: 3;
+  }
+  .myResume {
+    height: 80vh;
+    width: 100vw;
+    margin: 10vh 0vw;
   }
 }

@@ -9,142 +9,91 @@
     />
     <title>Eric</title>
     <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Quicksand"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://use.typekit.net/lcb5mnl.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
-  <body>
+  <body id="body">
     <div class="wrapper">
       <!-- All content goes inside the wrapper-->
-      <input type="checkbox" id="openSidebarMenu" />
-      <label for="openSidebarMenu" class="sidebarIconToggle">
-        <span class="spinner diagonal part-1"></span>
-        <span class="spinner horizontal"></span>
-        <span class="spinner diagonal part-2"></span>
-      </label>
-      <div class="sidebar">
-        <h2>Menu</h2>
+      <div class="sideLogos">
         <ul>
           <li>
-            <a href="index.html"><i class="items">Home</i></a>
+            <a href="https://github.com/EricWendel" class="sideLink"
+              ><img src="img/github.svg" class="sideImg"
+            /></a>
           </li>
           <li>
-            <a href="portfolio.html"><i class="items">Portfolio</i></a>
+            <a href="https://www.linkedin.com/in/eric-wendel/"
+              ><img src="img/linkedin.svg" class="sideImg"
+            /></a>
           </li>
           <li>
-            <a href="resume.html"><i class="items">Resume</i></a>
-          </li>
-          <li>
-            <a href="https://blog.ericwendel.com"><i class="items">Blog</i></a>
-          </li>
-          <li>
-            <a href="contact.html"><i class="items">Contact</i></a>
+            <a onclick="openResume()">
+              <img src="img/resumeIcon.svg" class="sideImg" />
+            </a>
           </li>
         </ul>
-
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/eric-wendel/"
-            ><img src="img/linkedinDark.png" class="socialLogo"
-          /></a>
-          <a href="https://github.com/EricWendel"
-            ><img src="img/githubDark.png" class="socialLogo"
-          /></a>
-          <a href="https://twitter.com/EricWendel20"
-            ><img src="img/twitterDark.png" class="socialLogo"
-          /></a>
-        </div>
       </div>
 
       <div class="mainContent">
         <section class="topSection">
-          <h1 class="headline">Eric Wendel</h1>
-          <img class="imagebg" src="img/bg.png" id="imagebg" />
+          <div class="verticalCenterMobile">
+            <h3 class="intro">Hi, I am</h3>
+            <h1 class="headline">Eric Wendel</h1>
+            <h2 class="tagline">
+              Adaptive <b class="gradient">Learner</b>, Aspiring
+              <b class="gradient">Developer</b>
+            </h2>
+          </div>
+        </section>
+        <section class="resumePopup">
+          <img
+            src="img/xButton.svg"
+            class="closeButton"
+            id="closeButton"
+            onclick="closeResume()"
+          />
+          <iframe
+            height="100%"
+            width="100%"
+            frameborder="0"
+            src="https://docs.google.com/document/d/e/2PACX-1vRo---k4lrPnF9Mghrcs_lRPSsDdl-k19AMvb8oIbrKVj-J3N5TDvIqpxEtU46ReDPyE5trDJ1UH841/pub?embedded=true"
+            class="myResume"
+            id="myResume"
+          ></iframe>
         </section>
 
-        <section class="cards" id="cards">
-          <div class="cardContainer" id="softwareContainer">
-            <div class="cardCard">
-              <img src="img/braces.png" alt="" />
-            </div>
-            <div class="logoCategory">
-              <h1>Software Engineer</h1>
-              <div class="logoContainer">
-                <div class="logoCard">
-                  <img src="img/cppLogo.svg" alt="" />
-                </div>
-                <div class="logoCard"></div>
-                <div class="logoCard">
-                  <img src="img/java.png" alt="" />
-                </div>
-                <div class="logoCard"></div>
-
-                <div class="logoCard"></div>
-                <div class="logoCard">
-                  <img src="img/python.png" alt="" />
-                </div>
-                <div class="logoCard"></div>
-                <div class="logoCard">
-                  <img src="img/git.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardContainer" id="webContainer">
-            <div class="cardCard">
-              <img src="img/dev.png" alt="" />
-            </div>
-            <div class="logoCategory">
-              <h1>Web Developer</h1>
-              <div class="logoContainer">
-                <div class="logoCard">
-                  <img src="img/html.png" alt="" />
-                </div>
-                <div class="logoCard"></div>
-                <div class="logoCard">
-                  <img src="img/css.png" alt="" />
-                </div>
-                <div class="logoCard"></div>
-
-                <div class="logoCard"></div>
-                <div class="logoCard">
-                  <img src="img/javascript.png" alt="" />
-                </div>
-                <div class="logoCard"></div>
-                <div class="logoCard">
-                  <img src="img/nextjs.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardContainer" id="creativeContainer">
-            <div class="cardCard">
-              <img src="img/creativeCloud.svg" alt="" />
-            </div>
-            <div class="logoCategory">
-              <h1>Creative Design</h1>
-              <div class="logoContainer">
-                <div class="logoCard">
-                  <img src="img/photoshop.svg" alt="" />
-                </div>
-                <div class="logoCard"></div>
-                <div class="logoCard">
-                  <img src="img/illustrator.svg" alt="" />
-                </div>
-                <div class="logoCard"></div>
-
-                <div class="logoCard"></div>
-                <div class="logoCard">
-                  <img src="img/premierepro.svg" alt="" />
-                </div>
-                <div class="logoCard"></div>
-                <div class="logoCard">
-                  <img src="img/aftereffects.svg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
+        <section class="content">
+          <h2><b class="gradient">Who Am I?</b></h2>
+          <p class="aboutMe">
+            I am a student at Texas A&M University pursuing a Bachelors of
+            Science in Computer Science with a minor in Business. I am a
+            Software Engineering Intern at Hewlett Packard Enterprise. I plan to
+            graduate in May 2023 with hopes of maintaining a 4.0 gpa. I am
+            dedicated to excellence.
+          </p>
+        </section>
+        <section class="content">
+          <h2><b class="gradient">Education Is Power</b></h2>
+          <p class="aboutMe">
+            I have been programming in school for more than 6 years. I have
+            enjoyed math, science, and logical problem solving. I am proficient
+            in C++ and Java, with moderate experience in Python and Javascript.
+            I have limited experience with React, SQL, HTML, CSS, Haskell, Git,
+            and Docker. I am prepared to learn beyond school.
+          </p>
+        </section>
+        <section class="content">
+          <h2><b class="gradient">Experience Is Valuable</b></h2>
+          <p class="aboutMe">
+            I am proud to work for Hewlett Packard Enterprise. Working in the
+            High Performance Computing industry has not only expanded my
+            programming knowledge but also improved my teamwork and
+            communication skills. Working on large scale projects provides
+            experience that school simply cannot offer. I strive to make a
+            positive impact.
+          </p>
         </section>
       </div>
     </div>

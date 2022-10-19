@@ -9,13 +9,18 @@
   --orig-pink: #ff0e93;
 }
 
+@font-face {
+  font-family: importedFont;
+  src: url(Roboto-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: multi-display, sans-serif;
+  font-family: importedFont;
   scroll-behavior: smooth;
 }
 

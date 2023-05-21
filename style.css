@@ -71,6 +71,13 @@ body {
   color: var(--off-white);
 }
 
+.notFound {
+  position: relative;
+  text-align: center;
+  font-size: 5vw;
+  color: var(--off-white);
+}
+
 .topSection .tagline {
   position: relative;
   font-size: 3vw;
@@ -146,6 +153,9 @@ body {
   }
   .topSection .headline {
     font-size: 15vw;
+  }
+  .notFound {
+    font-size: 10vw;
   }
   .topSection .tagline {
     font-size: 7vw;

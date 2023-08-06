@@ -1,12 +1,8 @@
 :root {
-  --dark-color: #3d4a4e;
-  --light-color: #1a7a5a;
   --off-white: #d5d3d3;
   --custom-gray: #556062;
-  --custom-maroon: #5c303c;
   --off-black: #111118;
-  --orig-blue: #6100fc;
-  --orig-pink: #ff0e93;
+  --orig-blue: rgb(60, 119, 193);
 }
 
 @font-face {
@@ -87,7 +83,7 @@ body {
 .gradient {
   color: transparent;
   font-weight: bold;
-  background: linear-gradient(-45deg, var(--orig-pink), var(--orig-blue));
+  background: linear-gradient(-45deg, var(--off-white), var(--orig-blue) 60%);
   background-clip: text;
   -webkit-background-clip: text;
 }
